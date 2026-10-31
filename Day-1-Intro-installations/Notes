@@ -99,9 +99,11 @@ sudo mv ./kubectl /usr/local/bin/kubectl
    --zones <AZ-1>,<AZ-2>
    
    example:
-   eksctl create cluster --name test \
-      --region us-east-1 \
-   --node-type c7i-flex.large \
+   eksctl create cluster \
+  --name test \
+  --region us-east-1 \
+  --node-type c7i-flex.large \
+  --nodes 1
 
 # after create cluster to update it
  aws eks update-kubeconfig --region <region> --name <cluster name>
