@@ -103,7 +103,7 @@ sudo mv ./kubectl /usr/local/bin/kubectl
   --name test \
   --region us-east-1 \
   --node-type t3.micro \
-  --nodes 1
+  --nodes 2
 
 # after create cluster to update it
  aws eks update-kubeconfig --region <region> --name <cluster name>
