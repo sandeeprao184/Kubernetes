@@ -102,7 +102,7 @@ sudo mv ./kubectl /usr/local/bin/kubectl
    eksctl create cluster \
   --name test \
   --region us-east-1 \
-  --node-type c7i-flex.large \
+  --node-type t3.micro \
   --nodes 1
 
 # after create cluster to update it
