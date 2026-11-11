@@ -85,6 +85,11 @@ spec:
 
 ```bash
 kubectl label nodes worker-node env=production
+ex: kubectl label nodes ip-10-0-3-65.ec2.internal clr=green
+
+unlabel:
+example
+kubectl label nodes ip-10-0-3-65.ec2.internal clr-
 ```
 
 ---
