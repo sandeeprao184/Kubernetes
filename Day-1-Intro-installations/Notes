@@ -112,7 +112,7 @@ sudo mv ./kubectl /usr/local/bin/kubectl
 
  # To delete the EKS clsuter 
     
-   eksctl delete cluster naresh --region ap-south-1
+   eksctl delete cluster test --region us-east-1
    
    
 
