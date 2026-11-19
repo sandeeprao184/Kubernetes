@@ -1,0 +1,16 @@
+bash
+kubectl run test-pod \
+  --image=busybox:1.36 \
+  -it --rm --restart=Never -- sh
+Inside the pod, execute:
+
+
+bash
+nslookup mysql-headless
+You should get the IP address of the backend Pod.
+
+You can also test:
+
+
+bash
+nslookup mysql-0.mysql-headless

@@ -1,0 +1,11 @@
+
+apiVersion: rbac.authorization.k8s.io/v1
+kind: Role
+metadata:
+  name: specific-pod-role
+  namespace: dev-workspace
+rules:
+  - apiGroups: [""]
+    resources: ["pods"]
+    verbs: ["get"]
+    resourceNames: ["my-app-pod"]   #pod resource name 
